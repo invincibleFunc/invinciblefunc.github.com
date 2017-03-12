@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="01_Introduction of Javascript…1. Core Concepts of Javascript 자바스트립트의 핵심 개념1.1 Object 객체
+거의 모든 것은 ‘객체’ 이다.
+pimitive type : boolean, number, string, nul">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Greg Lee">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="01_Introduction of Javascript..."/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Greg Lee&#39;s Devstory"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>01_Introduction of Javascript... - Greg Lee&#39;s Devstory</title>
+
+    <!-- Tachyons Core CSS -->
+    <link rel="stylesheet" href="//unpkg.com/tachyons/css/tachyons.min.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/invinciblefunc.github.com/css/style.css">
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+
+<body>
+
+<!-- Main Content -->
+<!-- Banner -->
+<!-- Banner -->
+<div class="w-100 bg-1 ph5-ns ph3 text-light">
+    
+    <nav class="db dt-l w-100 mw8 center border-box pv3">
+        <a class="db dtc-l v-mid link dim w-100 w-25-l tc tl-l mb2 mb0-l white" href="/invinciblefunc.github.com/" title="Greg Lee's Devstory">
+            <img src="http://www.codeblocq.com/assets/projects/hexo-theme-anodyne/assets/anodyne.svg" class="dib h3" alt="Greg Lee's Devstory">
+        </a>
+        <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/invinciblefunc.github.com/" 
+                    title="Home">
+                    Home
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/invinciblefunc.github.com/archives" 
+                    title="Archives">
+                    Archives
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/invinciblefunc.github.com/diaries" 
+                    title="Diary">
+                    Diary
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/invinciblefunc.github.com/about.html" 
+                    title="About">
+                    About
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/invinciblefunc.github.com/contact.html" 
+                    title="Contact">
+                    Contact
+                </a>
+            
+        </div>
+    </nav>
+
+    <!-- Title -->
+    <div class="w-100 mw8 center vh-40 dt">
+        <div class="dtc v-mid white">
+            <h1 class="f1-l f2-m tc tc-m tl-ns">01_Introduction of Javascript...</h1>
+            <p class="f4 fw3 pab-100px tc tc-m tl-ns">2017-03-12</p>
+        </div>
+    </div>
+
+    <!-- Icon -->
+    <div class="relative w-100 mw8 center white dn dn-m db-ns">
+        <i class="header-icon fa fa-file-text-o"></i>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="w-100 ph2 ph4-m ph5-l mv5 mv6-l">
+    <div class="content">
+        <div class="mw8 center">
+            <div class="cf">
+                <div class="fl w-100 w-70-l mw7 left fw3 lh-copy pr4-ns pr0-m post-content">
+                    <!-- Tags Vertical -->
+                    
+                        <div class="tags-container-vertical">
+                            <div class="tags-sub-container">
+                                <a class="fw3 ph1 dib" href="/invinciblefunc.github.com/tags/Javascript/">#Javascript</a> <a class="fw3 ph1 dib" href="/invinciblefunc.github.com/tags/Introduction/">#Introduction</a> <a class="fw3 ph1 dib" href="/invinciblefunc.github.com/tags/Concept/">#Concept</a> <a class="fw3 ph1 dib" href="/invinciblefunc.github.com/tags/OOP/">#OOP</a>
+                            </div>
+                        </div>
+                    
+
+                    <!-- Main Post Content -->
+                    <h1 id="01-Introduction-of-Javascript…"><a href="#01-Introduction-of-Javascript…" class="headerlink" title="01_Introduction of Javascript…"></a>01_Introduction of Javascript…</h1><h2 id="1-Core-Concepts-of-Javascript-자바스트립트의-핵심-개념"><a href="#1-Core-Concepts-of-Javascript-자바스트립트의-핵심-개념" class="headerlink" title="1. Core Concepts of Javascript 자바스트립트의 핵심 개념"></a>1. Core Concepts of Javascript 자바스트립트의 핵심 개념</h2><h3 id="1-1-Object-객체"><a href="#1-1-Object-객체" class="headerlink" title="1.1 Object 객체"></a>1.1 Object 객체</h3><ul>
+<li>거의 모든 것은 <strong>‘객체’</strong> 이다.</li>
+<li>pimitive type : boolean, number, string, null, undefined<ul>
+<li><strong>boolean, number, string</strong> -&gt; primitive type 이지만 객체처럼 다룰 수 있다.</li>
+<li><strong>null, undefined</strong> 는 특수한 값</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-2-Function-함수"><a href="#1-2-Function-함수" class="headerlink" title="1.2 Function 함수"></a>1.2 Function 함수</h3><ul>
+<li>함수도 <strong>‘객체’</strong> 로 취급</li>
+<li>일반적인 객체보다 조금 더 많은 기능이 있는 객체</li>
+<li>자바스크립트에서는 함수가 <strong>‘일급객체’</strong> 로 다뤄지는 점이 중요하다.</li>
+</ul>
+<h3 id="1-3-Prototype-프로토타입"><a href="#1-3-Prototype-프로토타입" class="headerlink" title="1.3 Prototype 프로토타입"></a>1.3 Prototype 프로토타입</h3><ul>
+<li>모든 객체는 숨겨진 링크(link)인 프로토타입(prototype)을 가진다.<ul>
+<li>이 링크는 해당 객체를 생성한 생성자의 프로토타입 객체를 가리킨다.</li>
+<li>ECMAScript에서는 [[Prototype]]이라고 표현한다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-4-Execution-Context-And-Closure-실행-컨텍스트와-클로저"><a href="#1-4-Execution-Context-And-Closure-실행-컨텍스트와-클로저" class="headerlink" title="1.4 Execution Context And Closure 실행 컨텍스트와 클로저"></a>1.4 Execution Context And Closure 실행 컨텍스트와 클로저</h3><ul>
+<li>Javascript 는 자신만의 독특한 과정으로 실행 컨텍스트롤 만들고 그 안에서 실행이 이루어진다.<ul>
+<li>이 실행 컨텍스트는 자신만의 유효 범위(scope)를 갖는다.</li>
+<li>이 과정에서 클로저(Closure)를 구현할 수 있다.</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-OOP-Programing-with-Javascript-자바스크립트와-객체지향-프로그래밍"><a href="#2-OOP-Programing-with-Javascript-자바스크립트와-객체지향-프로그래밍" class="headerlink" title="2. OOP Programing with Javascript 자바스크립트와 객체지향 프로그래밍"></a>2. OOP Programing with Javascript 자바스크립트와 객체지향 프로그래밍</h2><ul>
+<li>Javascript는 클래스를 지원하지 않는다.</li>
+<li>그러나, <strong>객체지향 프로그래밍</strong> 이 가능하다.<ul>
+<li>프로토타입prototype), 클로저closure) -&gt; 상속(inheritance), 캡슐화(encapsulation), 정보은닉 등을 소화</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-Functional-Programming-with-Javascript-자바스크립트와-함수형-프로그래밍"><a href="#3-Functional-Programming-with-Javascript-자바스크립트와-함수형-프로그래밍" class="headerlink" title="3. Functional Programming with Javascript 자바스크립트와 함수형 프로그래밍"></a>3. Functional Programming with Javascript 자바스크립트와 함수형 프로그래밍</h2><ul>
+<li>함수형 프로그래밍은 높은 수준의 모듈화를 가능케 하는 프로그래밍 방법이다.<ul>
+<li><strong>일급객체</strong> 라는 특성과 <strong>클로저</strong> 를 활용하여 이를 가능케 한다.</li>
+</ul>
+</li>
+<li>가독성을 떨어뜨리게 하는 단점이 있다.<ul>
+<li>과도한 클로저 사용, 함수형 프로그래밍 기법 -&gt; 제3자가 해석하기 난해하다.</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-Weakness-of-Javascript"><a href="#4-Weakness-of-Javascript" class="headerlink" title="4. Weakness of Javascript"></a>4. Weakness of Javascript</h2><ul>
+<li>굉장히 유연하고 뛰어난 표현력을 가지고 있다.</li>
+<li>위와 같은 특성 때문에 종종 <strong>디버깅</strong> 에 어려움을 겪기도 한다.<ul>
+<li>특히, 느슨한 타입 체크는… <ul>
+<li>개발자에게 타입 체크에 대한 자유를 주지만 </li>
+<li>컴파일 타임에서 잡지 못하는 오류는 고스란히 런타임오류로 발견된다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>전역 객체의 존재…<ul>
+<li>이름의 충돌 위험성이 존재</li>
+</ul>
+</li>
+</ul>
+<h2 id="Reference-INSIDE-JAVASCRIPT-인사이드-자바스크립트"><a href="#Reference-INSIDE-JAVASCRIPT-인사이드-자바스크립트" class="headerlink" title="Reference_INSIDE JAVASCRIPT(인사이드 자바스크립트) "></a>Reference_INSIDE JAVASCRIPT(인사이드 자바스크립트) </h2>
+                    
+                    <!-- Tags Bottom -->
+                    
+                        <div class="tags-container-bottom">
+                            <i class="fa fa-tag pr3 text-main-color"></i><a class="fw3 ph1 dib" href="/invinciblefunc.github.com/tags/Javascript/">#Javascript</a> <a class="fw3 ph1 dib" href="/invinciblefunc.github.com/tags/Introduction/">#Introduction</a> <a class="fw3 ph1 dib" href="/invinciblefunc.github.com/tags/Concept/">#Concept</a> <a class="fw3 ph1 dib" href="/invinciblefunc.github.com/tags/OOP/">#OOP</a>
+                        </div>
+                    
+
+                    <!-- Comments -->
+                    
+
+
+
+                </div>
+                <div class="fl w-100 w-30-l center fw3 lh-copy pl4-ns tl black-50">
+                    
+                    <hr class="dn-l mw4 black-50 mt5" />
+                    
+                    <!-- Widget 1: About -->
+                    <div class="mt5 mt0-l">
+    <article class="dt db-l mw8 mw8-m mw5-ns center ml0-l bg-white mv3">
+        <div class="dn dtc-m db-l v-mid tc pr4 pr0-l" style="min-width: 6rem;">
+            <img src="http://tachyons.io/img/avatar_1.jpg" class="mb4-l br-100 h3 w3 h4-l w4-l dib" title="Greg Lee">
+        </div>
+        <div class="dtc db-l v-mid lh-copy measure center f6 black-50 tj">
+            You make me feel invincible! I will never make perfect Func. but I will find invincible Func to get over malfunctions.
+        </div>
+    </article>
+</div>
+
+                    <hr class="dn-l mw4 black-50 mt5" />
+                    
+                    <!-- Widget 2: Categories -->
+                    
+                        <div class="mt5 tc tl-l">
+    <h3>Categories</h3>
+    
+        <p>
+            <a href="/invinciblefunc.github.com/categories/Javascript/">Javascript</a>
+        </p>
+    
+        <p>
+            <a href="/invinciblefunc.github.com/categories/Javascript/Starting-Javascript/">Starting_Javascript</a>
+        </p>
+    
+</div>
+
+
+                        <hr class="dn-l mw4 black-50 mt5" />
+                    
+
+                    <!-- Widget 3: Recent Posts -->
+                    <div class="mt5 tc tl-l">
+    <h3>Recent Posts</h3>
+    
+        <p>
+            <a href="/invinciblefunc.github.com/2017/03/12/Javascript/StratingJavascript/01_intro/">01_Introduction of Javascript...</a>
+        </p>
+    
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<div class="bg-1 ph2 ph5-ns pv5">
+        <div class="mv8">
+            <div class="center tc">
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://twitter.com/?lang=en" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://www.facebook.com/" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://dribbble.com/" target="_blank">
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://github.com/klugjo/hexo-theme-anodyne" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://plus.google.com/" target="_blank">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://www.behance.net/" target="_blank">
+                            <i class="fa fa-behance"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://500px.com/" target="_blank">
+                            <i class="fa fa-500px"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="mailto:test@example.com" target="_blank">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="/#" target="_blank">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </div>
+                
+            </div>
+            <div class="f6 f5-ns center tc white pt5 fw3">
+                @invincibleFunc. All right reserved | Design & Hexo <a class="link dim white" href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+            </div>
+        </div>
+    </div>
+
+<!-- After Footer -->
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
